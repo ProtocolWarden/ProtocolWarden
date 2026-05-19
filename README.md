@@ -33,7 +33,7 @@ graph TD
 
     subgraph exec ["Execution Backend layer"]
         TE[TeamExecutor]
-        DE[DagExecutor]
+        DE[DAGExecutor]
         CE[CritiqueExecutor]
     end
 
@@ -76,7 +76,7 @@ graph TD
 | Repo | Role |
 | --- | --- |
 | [TeamExecutor](https://github.com/ProtocolWarden/TeamExecutor) | coordinator/worker/verifier team execution — replaces kodo |
-| [DagExecutor](https://github.com/ProtocolWarden/DagExecutor) | DAG workflow executor (rustworkx) — replaces Archon |
+| [DAGExecutor](https://github.com/ProtocolWarden/DAGExecutor) | DAG workflow executor (rustworkx) — replaces Archon |
 | [CritiqueExecutor](https://github.com/ProtocolWarden/CritiqueExecutor) | adversarial and reflexion critique loops — new capability |
 
 ## Governance / Lifecycle layer
@@ -91,7 +91,7 @@ graph TD
 ## Forks and External Integrations
 
 Third-party forks (`openclaw`, `firecrawl`, `PraisonAI`, etc.) and retired integrations
-(`kodo` → replaced by TeamExecutor, `Archon` → replaced by DagExecutor) are documented at
+(`kodo` → replaced by TeamExecutor, `Archon` → replaced by DAGExecutor) are documented at
 [protocolwarden.github.io/repos/external-integrations/](https://protocolwarden.github.io/repos/external-integrations/).
 
 ## Public surface
