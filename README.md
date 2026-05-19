@@ -28,7 +28,7 @@ graph TD
         OPS[OperationsCenter]
         SB[SwitchBoard]
         OC[OperatorConsole]
-        ER[ExecutorRuntime]
+        ER[CoreRunner]
     end
 
     subgraph exec ["Execution Backend layer"]
@@ -69,7 +69,7 @@ graph TD
 | [OperationsCenter](https://github.com/ProtocolWarden/OperationsCenter) | planning, routing, execution dispatch, policy, evidence, run artifacts |
 | [SwitchBoard](https://github.com/ProtocolWarden/SwitchBoard) | policy-driven execution-lane and backend selector |
 | [OperatorConsole](https://github.com/ProtocolWarden/OperatorConsole) | operator entrypoint — persistent workspaces, context continuity, delegation |
-| [ExecutorRuntime](https://github.com/ProtocolWarden/ExecutorRuntime) | runtime invocation mechanics consuming RxP contracts |
+| [CoreRunner](https://github.com/ProtocolWarden/CoreRunner) | runtime invocation mechanics consuming RxP contracts |
 
 ## Execution Backend Layer
 
