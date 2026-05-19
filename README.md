@@ -31,6 +31,12 @@ graph TD
         ER[ExecutorRuntime]
     end
 
+    subgraph exec ["Execution Backend layer"]
+        TE[TeamExecutor]
+        DE[DagExecutor]
+        CE[CritiqueExecutor]
+    end
+
     subgraph gov ["Governance / Lifecycle layer"]
         CU[Custodian]
         SR[SourceRegistry]
@@ -42,6 +48,9 @@ graph TD
     DOCS --> ctrl
     DOCS --> gov
     proto --> ctrl
+    OPS --> TE
+    OPS --> DE
+    OPS --> CE
 ```
 
 ## Protocol / Semantic layer
@@ -62,6 +71,14 @@ graph TD
 | [OperatorConsole](https://github.com/ProtocolWarden/OperatorConsole) | operator entrypoint — persistent workspaces, context continuity, delegation |
 | [ExecutorRuntime](https://github.com/ProtocolWarden/ExecutorRuntime) | runtime invocation mechanics consuming RxP contracts |
 
+## Execution Backend Layer
+
+| Repo | Role |
+| --- | --- |
+| [TeamExecutor](https://github.com/ProtocolWarden/TeamExecutor) | coordinator/worker/verifier team execution — replaces kodo |
+| [DagExecutor](https://github.com/ProtocolWarden/DagExecutor) | DAG workflow executor (rustworkx) — replaces Archon |
+| [CritiqueExecutor](https://github.com/ProtocolWarden/CritiqueExecutor) | adversarial and reflexion critique loops — new capability |
+
 ## Governance / Lifecycle layer
 
 | Repo | Role |
@@ -71,10 +88,10 @@ graph TD
 | [PlatformDeployment](https://github.com/ProtocolWarden/PlatformDeployment) | local developer platform for the shared AI coding stack |
 | [Warehouse](https://github.com/ProtocolWarden/Warehouse) | LLM-ready context packaging and staging |
 
-## External integrations
+## Forks and External Integrations
 
-Backend candidates and forked dependencies are documented separately so they
-are not confused with core platform repos. See
+Third-party forks (`openclaw`, `firecrawl`, `PraisonAI`, etc.) and retired integrations
+(`kodo` → replaced by TeamExecutor, `Archon` → replaced by DagExecutor) are documented at
 [protocolwarden.github.io/repos/external-integrations/](https://protocolwarden.github.io/repos/external-integrations/).
 
 ## Public surface
