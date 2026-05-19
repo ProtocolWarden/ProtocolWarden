@@ -76,7 +76,7 @@ graph TD
 | Repo | Role |
 | --- | --- |
 | [TeamExecutor](https://github.com/ProtocolWarden/TeamExecutor) | coordinator/worker/verifier team execution — replaces kodo |
-| [DagExecutor](https://github.com/ProtocolWarden/DagExecutor) | DAG workflow executor (rustworkx) — replaces Archon |
+| [DAGExecutor](https://github.com/ProtocolWarden/DAGExecutor) | DAG workflow executor (rustworkx) — replaces Archon |
 | [CritiqueExecutor](https://github.com/ProtocolWarden/CritiqueExecutor) | adversarial and reflexion critique loops — new capability |
 
 ## Governance / Lifecycle layer
