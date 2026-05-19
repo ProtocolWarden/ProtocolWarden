@@ -33,7 +33,7 @@ graph TD
 
     subgraph exec ["Execution Backend layer"]
         TE[TeamExecutor]
-        DE[DagExecutor]
+        DE[DAGExecutor]
         CE[CritiqueExecutor]
     end
 
@@ -91,7 +91,7 @@ graph TD
 ## Forks and External Integrations
 
 Third-party forks (`openclaw`, `firecrawl`, `PraisonAI`, etc.) and retired integrations
-(`kodo` → replaced by TeamExecutor, `Archon` → replaced by DagExecutor) are documented at
+(`kodo` → replaced by TeamExecutor, `Archon` → replaced by DAGExecutor) are documented at
 [protocolwarden.github.io/repos/external-integrations/](https://protocolwarden.github.io/repos/external-integrations/).
 
 ## Public surface
