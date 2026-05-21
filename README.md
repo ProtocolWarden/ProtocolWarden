@@ -37,6 +37,10 @@ graph TD
         CE[CritiqueExecutor]
     end
 
+    subgraph cog ["Cognition Lifecycle layer"]
+        CLP[ContextLifecycleProtocol]
+    end
+
     subgraph gov ["Governance / Lifecycle layer"]
         CU[Custodian]
         SR[SourceRegistry]
@@ -51,6 +55,7 @@ graph TD
     OPS --> TE
     OPS --> DE
     OPS --> CE
+    OPS --> CLP
 ```
 
 ## Protocol / Semantic layer
@@ -78,6 +83,12 @@ graph TD
 | [TeamExecutor](https://github.com/ProtocolWarden/TeamExecutor) | coordinator/worker/verifier team execution — replaces kodo |
 | [DAGExecutor](https://github.com/ProtocolWarden/DAGExecutor) | DAG workflow executor (rustworkx) — replaces Archon |
 | [CritiqueExecutor](https://github.com/ProtocolWarden/CritiqueExecutor) | adversarial and reflexion critique loops — new capability |
+
+## Cognition Lifecycle layer
+
+| Repo | Role |
+| --- | --- |
+| [ContextLifecycleProtocol](https://github.com/ProtocolWarden/ContextLifecycleProtocol) | generic configurable cognition lifecycle runtime — bounded, resumable agent sessions |
 
 ## Governance / Lifecycle layer
 
