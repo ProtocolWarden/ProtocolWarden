@@ -38,7 +38,7 @@ graph TD
     end
 
     subgraph cog ["Cognition Lifecycle layer"]
-        CLP[ContextLifecycleProtocol]
+        CLP[ContextLifecycle]
     end
 
     subgraph gov ["Governance / Lifecycle layer"]
@@ -88,7 +88,7 @@ graph TD
 
 | Repo | Role |
 | --- | --- |
-| [ContextLifecycleProtocol](https://github.com/ProtocolWarden/ContextLifecycleProtocol) | generic configurable cognition lifecycle runtime — bounded, resumable agent sessions |
+| [ContextLifecycle](https://github.com/ProtocolWarden/ContextLifecycle) | generic configurable cognition lifecycle runtime — bounded, resumable agent sessions |
 
 ## Governance / Lifecycle layer
 

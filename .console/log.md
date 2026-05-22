@@ -26,7 +26,7 @@ _Where did you leave off? What should be verified next session?_
 
 _Free-form scratch. Clear periodically — old entries can be deleted once no longer relevant._
 
-## 2026-05-21 — Add ContextLifecycleProtocol to org profile
+## 2026-05-21 — Add ContextLifecycle to org profile
 
 Added new "Cognition Lifecycle layer" section to README.md with CLP entry.
 Updated Mermaid diagram: new `cog` subgraph, OPS→CLP edge.
