@@ -1,1 +1,7 @@
 .console/.context
+.console/*
+!.console/task.md
+!.console/guidelines.md
+!.console/backlog.md
+!.console/log.md
+CLAUDE.md

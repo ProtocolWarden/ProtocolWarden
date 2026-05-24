@@ -1,0 +1,6 @@
+repo_key: ProtocolWarden
+src_root: .
+tests_root: tests
+
+privacy:
+  require_boundary_artifact: true
