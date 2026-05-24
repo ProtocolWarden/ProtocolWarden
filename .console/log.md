@@ -32,3 +32,7 @@ Added new "Cognition Lifecycle layer" section to README.md with CLP entry.
 Updated Mermaid diagram: new `cog` subgraph, OPS→CLP edge.
 
 ---
+
+## 2026-05-23 — Onboard Custodian
+
+- Added .custodian/config.yaml, .hooks/pre-commit + .hooks/pre-push (CoreRunner pattern), .console/* gitignore policy, CHANGELOG.md, and README sections (What this repo is / is not / Getting started; renamed ecosystem section to Architecture overview). Activated core.hooksPath=.hooks. Audit clean.

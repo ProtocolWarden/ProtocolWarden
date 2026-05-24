@@ -4,6 +4,24 @@ Contract-first AI operations ecosystem built around semantic repo graphs,
 execution protocols, policy-controlled routing, and public-safe architecture
 projection.
 
+## What this repo is
+
+The GitHub organization profile front door for the ProtocolWarden ecosystem — a
+human-readable index of the component repos and links into the full
+documentation site.
+
+## What this repo is not
+
+Not a code package and not the documentation source. There is no runtime,
+library, or build artifact here. Canonical docs live at
+[protocolwarden.github.io](https://protocolwarden.github.io/), and each
+component lives in its own repo (catalogued below).
+
+## Getting started
+
+Start at the [documentation site](https://protocolwarden.github.io/), then use
+the repo catalog below to jump into a specific component.
+
 ## What to click next
 
 - Full documentation: **[protocolwarden.github.io](https://protocolwarden.github.io/)**
@@ -11,7 +29,7 @@ projection.
 - Architecture charter: [protocolwarden.github.io/architecture/](https://protocolwarden.github.io/architecture/)
 - Governance: [protocolwarden.github.io/governance/](https://protocolwarden.github.io/governance/)
 
-## Ecosystem at a glance
+## Architecture overview
 
 ```mermaid
 graph TD
