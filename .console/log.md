@@ -36,3 +36,7 @@ Updated Mermaid diagram: new `cog` subgraph, OPS→CLP edge.
 ## 2026-05-23 — Onboard Custodian
 
 - Added .custodian/config.yaml, .hooks/pre-commit + .hooks/pre-push (CoreRunner pattern), .console/* gitignore policy, CHANGELOG.md, and README sections (What this repo is / is not / Getting started; renamed ecosystem section to Architecture overview). Activated core.hooksPath=.hooks. Audit clean.
+
+## 2026-06-03 — Add SyncMechanism to the org profile catalog
+
+Doc reconciliation (§7c): SyncMechanism (public per PlatformManifest) was missing from the profile README repo catalog. Added it to the Governance/Lifecycle layer table + the architecture mermaid diagram, and enriched the ContextLifecycle role line to mention context-injection tiered memory. Boundary-safe (only public-manifest repos added).

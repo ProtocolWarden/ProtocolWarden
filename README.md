@@ -64,6 +64,7 @@ graph TD
         SR[SourceRegistry]
         PD[PlatformDeployment]
         WH[Warehouse]
+        SM[SyncMechanism]
     end
 
     DOCS --> proto
@@ -106,7 +107,7 @@ graph TD
 
 | Repo | Role |
 | --- | --- |
-| [ContextLifecycle](https://github.com/ProtocolWarden/ContextLifecycle) | generic configurable cognition lifecycle runtime — bounded, resumable agent sessions |
+| [ContextLifecycle](https://github.com/ProtocolWarden/ContextLifecycle) | cognition lifecycle runtime — bounded, resumable agent sessions + context-injection tiered memory |
 
 ## Governance / Lifecycle layer
 
@@ -116,6 +117,7 @@ graph TD
 | [SourceRegistry](https://github.com/ProtocolWarden/SourceRegistry) | source and fork tracking and lifecycle |
 | [PlatformDeployment](https://github.com/ProtocolWarden/PlatformDeployment) | local developer platform for the shared AI coding stack |
 | [Warehouse](https://github.com/ProtocolWarden/Warehouse) | LLM-ready context packaging and staging |
+| [SyncMechanism](https://github.com/ProtocolWarden/SyncMechanism) | public-safe Syncthing install + runtime mechanism (version pinning, tray, sync-spec validation) |
 
 ## Forks and External Integrations
 
