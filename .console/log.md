@@ -1,5 +1,12 @@
 # Log
 
+## 2026-06-04 — Console reconciliation: enforce R1/R2
+
+Enforce-only pass per console-reconciliation-spec. .console already clean and
+under budget (log 42 lines < 400, no scrub-target leaks). Set
+audit.reconcile_enforce: true in .custodian/config.yaml so R1/R2 enforce.
+Verified: cl reconcile check GREEN; custodian audit R1/R2 = 0 findings.
+
 ## 2026-05-21 — Add closing fence to console-context block
 
 Added <!-- /console-context --> end marker so OperatorConsole only replaces its
